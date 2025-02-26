@@ -1,7 +1,6 @@
 # Bracket Validator
 
-[![Build Status](https://travis-ci.org/rubinskii88/bracket-validator.svg?branch=main)](https://travis-ci.org/rubinskii88/bracket-validator)
-
+[![Build Status](https://app.travis-ci.com/rubinskii88/bracket-validator.svg?branch=main)](https://app.travis-ci.com/rubinskii88/bracket-validator)
 
 **Bracket Validator** — консольная утилита на PHP для проверки корректности расстановки круглых скобок.
 
@@ -15,27 +14,31 @@
 6. Для управления зависимостями используется Composer
 
 # Установка и запуск
+
 1. Клонировать репозиторий
 
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/bracket-validator.git
 ```
+
 2. Перейти в каталог
+
 ```bash
 cd bracket-validator
 ```
 
 3. Установить зависимости
+
 ```bash
 composer install
 ```
 
 3. Запустить утилиту
 
-
 ```bash
 php run.php "(5 + 3) * (2 - 1)"
 ```
+
 Если скобки расставлены правильно, программа выведет:
 `Correct brackets placement.`
 
@@ -45,6 +48,7 @@ php run.php "(5 + 3) * (2 - 1)"
 # Запуск тестов (PHPUnit)
 
 Проверить работоспособность кода можно с помощью тестов:
+
 ```bash
 php vendor/bin/phpunit tests
 ```
@@ -54,6 +58,7 @@ php vendor/bin/phpunit tests
 ```bash
 OK (5 tests, 12 assertions)
 ```
+
 Если что-то сломано, PHPUnit сообщит об ошибке.
 
 # CI/CD с Travis CI
@@ -91,7 +96,8 @@ OK (5 tests, 12 assertions)
 В конце проверяю наличие незакрытых незакрытые `(`, если они есть, то в коде ошибка.
 
 ### Примеры работы алгоритма:
-**"5 * (4 - 2)"**
+
+**"5 \* (4 - 2)"**
 
 ( - добавляю в стек
 
@@ -100,7 +106,8 @@ OK (5 tests, 12 assertions)
 Стек пуст - ошибок нет
 
 ---
-**"5 * (4 - 2("**
+
+**"5 \* (4 - 2("**
 
 ( - добавляю в стек
 
