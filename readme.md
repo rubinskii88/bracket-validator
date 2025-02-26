@@ -1,6 +1,6 @@
 # Bracket Validator
 
-[![Build Status](https://app.travis-ci.com/rubinskii88/bracket-validator.svg?branch=main)](https://app.travis-ci.com/rubinskii88/bracket-validator)
+[![PHP Tests](https://github.com/rubinskii88/bracket-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/rubinskii88/bracket-validator/actions)
 
 **Bracket Validator** — консольная утилита на PHP для проверки корректности расстановки круглых скобок.
 
