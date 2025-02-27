@@ -18,7 +18,7 @@
 1. Клонировать репозиторий
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/bracket-validator.git
+git clone https://github.com/rubinskii88/bracket-validator.git
 ```
 
 2. Перейти в каталог
